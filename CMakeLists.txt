@@ -56,7 +56,7 @@ endif(NOT HAVE_PRINTF)
 # system 
 check_function_exists(system HAVE_SYSTEM)
 if(NOT HAVE_SYSTEM)
-   message(FATAL_ERROR "Function: system not found. Exiting.")
+   message(FATAL_ERROR "Function system not found. Exiting.")
 endif(NOT HAVE_SYSTEM)
 
 #strcat
@@ -123,7 +123,7 @@ add_executable(hello ${PROJECT_SOURCE_DIR}/test.c ${PROJECT_SOURCE_DIR}/myfun.c)
 add_executable(hello2 ${PROJECT_SOURCE_DIR}/test2.c ${PROJECT_SOURCE_DIR}/myfun.c)
 
 
-if ( NOT HAVE_RSCRIPTPKG AND NOT HAVE_RPKG)
+if ( NOT HAVE_RPKG )
    message("-- WARNING:  Package will be compiled but R script will not ")
    message("             be called. Something missing.")
    message("             Check that you have installed: ")
