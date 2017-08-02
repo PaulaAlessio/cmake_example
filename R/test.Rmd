@@ -1,0 +1,13 @@
+---
+title: "Sample Document"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+
+```{r echo = FALSE}
+    x = seq(1:0.5:10)
+    plot(x,x)
+```
+

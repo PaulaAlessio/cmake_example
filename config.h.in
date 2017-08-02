@@ -1,0 +1,3 @@
+#cmakedefine VERSION "@VERSION@"
+#cmakedefine HAVE_RPKG
+#cmakedefine R_EXEC "@R_EXEC@"
