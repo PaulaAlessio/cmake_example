@@ -1,17 +1,17 @@
 #---------------------------------------------------------------
-# Setting variable names
+# set up: version, project name, project version, directories 
 #---------------------------------------------------------------
 
 # Specify the minimum version for CMake
 cmake_minimum_required(VERSION 2.8)
 
 # Project's name
-project(myTestProject)
+project(cmake_example)
 
 # Project's version
 set(VERSION "1.0")
 
-# Set the output folder where your program will be created
+# Set the directories (source, bin) of the project
 set(PROJECT_SOURCE_DIR ${CMAKE_SOURCE_DIR}/src)
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
@@ -21,9 +21,8 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 include(CheckIncludeFiles)
 include(CheckFunctionExists)
 
-
 #---------------------------------------------------------------
-# Check that all 
+# Check that the system has all header files and functions used 
 #---------------------------------------------------------------
 
 # Check header files
